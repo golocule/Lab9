@@ -9,14 +9,11 @@ def encode(password):
         new_pass += char
     return new_pass
 
-def decode(password):
-    new_pass = ""
-    for char in password:
-        char = int(char)
-        char -= 3
-        char = str(char)
-        new_pass += char
-    return new_pass
+def encoder(password):
+    decodedPass = ""
+    for num in password:
+        decodedPass += str(int(num) - 3)
+    return decodedPass
 
 while True:
 
