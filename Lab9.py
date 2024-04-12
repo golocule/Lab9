@@ -9,12 +9,12 @@ def encode(password):
         new_pass += char
     return new_pass
 
-def encoder(password):
+def encode(password):
     decodedPass = ""
     for num in password:
         decodedPass += str(int(num) - 3)
     return decodedPass
-
+ 
 while True:
 
     print("Menu")
